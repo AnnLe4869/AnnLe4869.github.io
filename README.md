@@ -1,2 +1,2 @@
 # Landing-page
-This is a landing page for Violet Evergarden anime
+This is a landing page for anime Violet Evergarden
