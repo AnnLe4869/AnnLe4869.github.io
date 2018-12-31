@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+html, 
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+
+/* Navigation part */
+
+nav{
+    background: url(https://coverfiles.alphacoders.com/522/52228.png) left top no-repeat;
+    color: rgb(165, 136, 136);
+    font-size: 1.1em;
+}
+
+nav div{
+    width: 100%;
+    height: 100px;
+    border: 0.5px solid rgb(228, 149, 149);
+}
+
+a,
+a:visited,
+a:link,
+a:active,
+a:hover{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(94, 99, 91);
+}
+a:hover{
+    color: azure;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Need to add this class so that the div nest inside a tag don't exceed the a tag when resize */
+.flex__anchor{
+    width: 100%;
+    height: 100%;
+}
+
+.nav__right{
+    width: 15%;
+}
+.nav__right:hover{
+    cursor: pointer;
+    color: azure;
+    background-color: rgb(138, 156, 175,0.5);
+}
+
+.nav__left{
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+@media (max-width:850px){
+    .flex{
+        flex-direction: column;
+    }
+    .nav__right{
+        width: 100%;
+        height: 50px;
+    }
+    .nav__left{
+        height: 80px;
+        padding: 0;
+    }
+    img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;        
+    }
+}
+
+@media (max-width: 450px) {
+        nav{
+            background: url(http://violet-evergarden.jp/img/introduction/introBG.jpg) left top no-repeat;
+        }
+
+}
+
+/* Body part */
+article{
+    background: url(http://violet-evergarden.jp/img/top/_sp_keyvisual_movie.jpg) left top no-repeat;
+    background-size: cover;
+}
+
+img:hover,
+iframe:hover{
+    transform: scale(1.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.2s;
+}
+
+cite{
+    padding: 0px;
+    margin: 0px;
+}
+blockquote{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+}
+
+.container{
+    grid-column: 2/3;
+}
+
+#quote cite{
+    text-align: right;
+}
+
+#review blockquote,
+#review cite{
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+
+
+#product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+
+#product div{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+#product img{
+    padding-top: 20px;
+    object-fit: cover;
+    max-width: 90%;
+}
+
+#product p{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 30%;
+    background: url(http://violet-evergarden.jp/img/introduction/introBG.jpg) left top no-repeat;
+}
+
+footer div{
+    width: 100%;
+    height: 100%;
+}
+.center__page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: cornflowerblue;
+}
+
+input{
+    min-width: 50%;
+    margin-top: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 6px 5px;
+}
+
+
+@media (max-width: 800px){
+    .grid{
+        grid-template-columns: 1fr 10fr 1fr;
+    }
+    #product{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
